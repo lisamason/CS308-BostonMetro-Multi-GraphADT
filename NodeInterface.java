@@ -1,6 +1,9 @@
 
 public interface NodeInterface {
 	
- void addNode(int ID);
+ String getName();
+ int getId();
+ boolean isVisited();
+ void makeVisited();
  
 }

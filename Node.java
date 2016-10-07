@@ -1,11 +1,32 @@
-import java.util.ArrayList;
 
 public class Node implements NodeInterface {
 
-	ArrayList<Integer> nodes = new ArrayList<Integer>();
+	private String name;
+	private int id;
+	private boolean visited;
 	
-	public void addNode(int ID){
-		nodes.add(ID);
+	public Node(String name, int id){
+		this.name = name;
+		this.id = id;
+		visited = false;
+	
 	}
 
+	public String getName() {
+		return name;
+	}
+	
+	public int getId() {
+		return id;
+	}
+
+	
+
+	public boolean isVisited() {
+		return visited;
+	}
+	
+	public void makeVisited(){
+		visited = true;
+	}
 }
